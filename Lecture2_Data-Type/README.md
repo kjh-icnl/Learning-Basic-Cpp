@@ -2,7 +2,7 @@
 ## 2.1 What are the Data Types and Variables on C++?
 
 ### 2.1.1 Data Types (Basic)
-When we make some programs or codes through coding(programming), a concept of `data type` is really important. I'll regard people in this page as those who have experienced any other programming language such as C, Go, Python and so on. So, I'll explain the concept on this page. However, I wanna emphasize the importance of this concept, so that I'll add here one website explaining about a concept of data type: <여기는 자료형에 대한 설명이 나온 웹페이지 주소>  
+When we make some programs or codes through coding(programming), a concept of `data type` is really important. I'll regard people in this page as those who have experienced any other programming language such as C, Go, Python and so on. So, I won't explain the concept on this page. However, I wanna emphasize the importance of this concept, so that I'll add here one website explaining about a concept of data type: <여기는 자료형에 대한 설명이 나온 웹페이지 주소>  
 
 
 #### 2.1.1.a Integer Type 
