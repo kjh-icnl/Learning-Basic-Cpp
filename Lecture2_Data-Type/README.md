@@ -22,7 +22,7 @@ When we make some programs or codes through coding(programming), a concept of `d
 <정수형 자료형 표 넣기>
 
 #### 2.1.1.b Floating Point Type
-
+:) Floating Point Type is needed to express real numbers including fraction. So, 
 
 
 #### 2.1.1.c Character Type
