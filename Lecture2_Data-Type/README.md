@@ -22,7 +22,13 @@ When we make some programs or codes through coding(programming), a concept of `d
 <정수형 자료형 표 넣기>
 
 #### 2.1.1.b Floating Point Type
-:) Floating Point Type is needed to express real numbers including fraction. So, 
+:) Floating Point Type is needed to express real numbers including fraction(decimal). So, for this processing, C++ has chosen three types: `float`, `double` and `long double`. First, I'll let you know about memory sizes of each types. Data type "float" has 4 Bytes, "double" does 8 Bytes and "long double" can do 8, 12 or 16 Bytes. In case of "long double", the memory size depends on the system, which means a kind of gcc or g++ compiler, a version of C++, the system of your computer and so on.  
+
+
+:) In this part, you don't have to know details about floating point problems or expression methods. So, you need to know about the result. "flaot" has `3.4 x 10^-38 ~ 3.4 x 10^38` as a data length, "double" does `1.7 x 10-308 ~ 1.7 x 10^308` and "long double" can be more detailed than "dboulbe". Following below figure means on C++ how to express the floating point (fraction). Actually, this method is invented to represent lower fraction point numbers using only 4 Bytes.  
+
+
+:) However, in this floating point type, there is a severe issue: `ACCURACY`. In previous paragraph, I explained that "float" can express `3.4 x 10^-38 ~ 3.4 x 10^38` and "double" can do `1.7 x 10^-308 ~ 1.7 x 10^308`, however the numeric digits for computer to express and the accuracy of number processing, they are not in a same place. I won't explain the principle of floating point accuracy. By the way, you should know about accuracy results. Data type "float" can guarantee computer's computation of the `sixth decimal place` and "double can do about `fifteenth decimal place`.  
 
 
 #### 2.1.1.c Character Type
