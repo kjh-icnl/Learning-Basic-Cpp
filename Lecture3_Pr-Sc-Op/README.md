@@ -33,7 +33,7 @@ int main()
 Let's see another example.  
 
 ```
-// Example 1
+// Example 2
 #include <iostream>
 
 int main()
@@ -44,7 +44,35 @@ int main()
     return 0;
 }
 ```
-**IMPORTANT** : At this time, `endl` means "end line". However, if you don't write `std::endl`, you can't go next line because basically `std::cout` doesn't change line when it coompletes its own process.
+**IMPORTANT** : At this time, `endl` means "end line". However, if you don't write `std::endl`, you can't go next line because basically `std::cout` doesn't change line when it coompletes its own process.  
+
+### 3.1.3 Enter Something
+:) You can enter something about text, number and so on using `std::cin`. It's same with 3.1.2. You should be familiar.  
+
+See this example.  
+
+```
+// Example 3
+#include <iostream>
+
+int main()
+{
+    int iVal;
+    char cVal[10];
+    
+    std::cout << "Enter your word: ";
+    std::cin >> cVal;
+    
+    std::cout << "Enter your number: ";
+    std::cin >> iVal;
+    
+    std::cout << "Your word is " << cVal << std::endl;
+    std::cout << "Your number is " << iVal << std::endl;
+    
+    return 0;
+}
+```
+
 
 
 ## 3.2 Operator
