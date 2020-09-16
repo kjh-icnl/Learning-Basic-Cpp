@@ -76,7 +76,6 @@ The reason why I declared as `cVal[10]` is related with a concept of array. Acut
 
 
 ## 3.2 Operator
-### 3.2.1 Kinds of operator
 :) **Arithmetic Operator** : `+`, `-`, `*`, `/` and `%`, where % means a remainder after division. About other operators, I won't explain 'em.  
 
 :) **Assignment Operator** : `=`, `+=`, `-=`, `*=`, `/=` and `%=`. There is really IMPORTANT point: in programming, "=" doesn't mean "equal", but indeed "=" means "substitution". Generally, Assignment operator is made by cobining "=" with Arithmetic operators(AO). However, here is a simple formula.  
@@ -106,8 +105,92 @@ int main()
     
     return 0;
 }
-
-
 ```
 
+:) **Increment and decrement operator** : `++` and `--`. This operator is a really easy concept. They mean adding 1 or subtracting 1. If you refer a following example, you can understand this concept totally.
+```
+// Example 5
+#include <iostream>
+
+int main()
+{
+    int iVal_1, iVal_2;
+    
+    iVal_1 = 1;
+    iVal_2 = 2;
+    
+    iVal_1 = ++iVal_1; // iVal_1 should be 2
+    iVal_2 = --iVal_2; // iVal_2 should be 1
+    
+    std::cout << iVal_1 << std::endl;
+    std::cout << iVal_2 << std::endl; // Printing results
+    
+    return 0;
+}
+```
+:) **Comparison Operators** : `==`, `!=`, `>`, `<`, `>=` and `<=`. Here "==" means "equal". Explanation skipped.  
+
+:) **Logical Operators** : `&&`, `||` and `!`. If you've studied python, you'd be familiar with "and", "or" and so on. On C++, they have same functions with "and", "or" and so on. Thus "&&" is "and", "||" is "or" and "!" is "is not". Explanation Completed.
+
+
 ## 3.3 Execution Result of Examples
+  * Example **1**  Result (example)
+  ```
+  Hello, World
+  
+  ...Press Any Button to exit console.
+  ```
+  You can ignore some texts such as "...Pres ~". Important part is `Hello, World`. From now, I won't write this line.  
+  
+  * Example **2**  Result (example)
+  ```
+  2
+  Hello, World
+  
+  ```
+
+  * Example **3**  Result(1) (example)
+  ```
+  Enter your word: apple
+  Enter your number: 20
+  Your word is apple
+  Your number is 20
+  
+  ```
+
+  * Example **3**  Result(2) (example)
+  ```
+  Enter your word: relationship
+  Enter your number: 20
+  Your word is relationship
+  Your number is 20
+  
+  ```
+  or
+  ```
+  Enter your word: relationship
+  Enter your number: 20
+  Your word is relationsh
+  Your number is 20
+  
+  ```
+  You can get any result like this. This expression means that a length of the entered word is over a previous set array length (indeed 10).  
+  
+  * Example **4**  Result (example)
+  ```
+  5
+  -3
+  18
+  
+  ```
+  
+  * Example **5**  Result (example)
+  ```
+  2
+  1
+  
+  ```
+
+
+
+
