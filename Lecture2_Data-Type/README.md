@@ -28,7 +28,7 @@ When we make some programs or codes through coding(programming), a concept of `d
 :) In this part, you don't have to know details about floating point problems or expression methods. So, you need to know about the result. "flaot" has `3.4 x 10^-38 ~ 3.4 x 10^38` as a data length, "double" does `1.7 x 10-308 ~ 1.7 x 10^308` and "long double" can be more detailed than "dboulbe". Following below figure means on C++ how to express the floating point (fraction). Actually, this method is invented to represent lower fraction point numbers using only 4 Bytes.  
 
 
-:) However, in this floating point type, there is a severe issue: `ACCURACY`. In previous paragraph, I explained that "float" can express `3.4 x 10^-38 ~ 3.4 x 10^38` and "double" can do `1.7 x 10^-308 ~ 1.7 x 10^308`, however the numeric digits for computer to express and the accuracy of number processing, they are not in a same place. I won't explain the principle of floating point accuracy. By the way, you should know about accuracy results. Data type "float" can guarantee computer's computation of the `sixth decimal place` and "double can do about `fifteenth decimal place`.  
+:) However, in this floating point type, there is a severe issue: `ACCURACY`. In previous paragraph, I explained that "float" can express `3.4 x 10^-38 ~ 3.4 x 10^38` and "double" can do `1.7 x 10^-308 ~ 1.7 x 10^308`, however the numeric digits for computer to express and the accuracy of number processing, they are not in a same place. I won't explain the principle of floating point accuracy. By the way, you should know about accuracy results. Data type "float" can guarantee computer's computation of the `sixth decimal place` and "double can do about `fifteenth decimal place`.  <정리된 표 넣기>
 
 
 #### 2.1.1.c Character Type
@@ -36,3 +36,22 @@ When we make some programs or codes through coding(programming), a concept of `d
 
 
 #### 2.1.1.d Boolean Type
+:) Boolean Type is really easy concept. I guess that you've heard that "Light On" is "1" and "Light Off" is "0". Like this, Light on and off are a really appropriate example. Like this, computer is able to, you know, read only "0" and "1". If you've tried `python`, to say "it's not false", you would've written "True" and in contrast case, "False". However, on C++, `1` means `True`. And `0` means `False`. So, if you wanna say 'it's true', then you should write down "1". Like this, boolean type is a data type for you to be able to express "True" or "False".  
+
+
+:) Also, you can print not "1" but "True" using `boolalpha`. For this example, I'll add it at Appendix.  
+
+
+### 2.1.2 Variables
+#### 2.1.2.a How to declare variables
+:) `[THIS SECTION IS ABOUT GENERAL METHOD]`
+  1. Variables can't include any space( ) but can inlcude under bar (_)
+     > For example, `int Val = 3;` or `int Val_a = 3;`
+  2. A name of any variable can't start number.
+     > For example, `int Val_1 = 3;`
+  3. ^ Generally, programmers make variables include only `alphabet`, `under bar` and `number`.
+  4. ^ Generally, programmers add one first letter(lower case) of data type in front of a name of any variable
+     > For example, `int iVal = 3;` or `double dVal = 3.1f;`  
+     
+     
+:) 
