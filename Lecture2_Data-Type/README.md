@@ -65,3 +65,7 @@ When we make some programs or codes through coding(programming), a concept of `d
   * On C++ Style
      > const float PI = 3.14;  
      > &gt; &nbsp; **Note** : You can apply C-style on C++.
+     
+     
+#### 2.1.2.c Type Conversion
+:) 
