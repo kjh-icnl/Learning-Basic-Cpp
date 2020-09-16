@@ -174,7 +174,7 @@ int main()
   Your number is 20
   
   ```
-  You can get any result like this. This expression means that a length of the entered word is over a previous set array length (indeed 10).  
+  You can get any result like these( Example 3 Result_2 ). This expression means that a length of the entered word is over a previous set array length (indeed 10).  
   
   * Example **4**  Result (example)
   ```
