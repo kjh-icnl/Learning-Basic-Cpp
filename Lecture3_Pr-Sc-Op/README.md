@@ -44,7 +44,7 @@ int main()
     return 0;
 }
 ```
-At this time, `endl` means "end line". However, if you don't write `std::endl`, you can't go next line because basically `std::cout` doesn't change line when it coompletes its own process.
+**IMPORTANT** : At this time, `endl` means "end line". However, if you don't write `std::endl`, you can't go next line because basically `std::cout` doesn't change line when it coompletes its own process.
 
 
 ## 3.2 Operator
