@@ -72,7 +72,10 @@ int main()
     return 0;
 }
 ```
-
+The reason why I declared as `cVal[10]` is related with a concept of array. Acutally, "[10]" means the length of the data type, especially "char" in this case.
 
 
 ## 3.2 Operator
+
+
+## 3.3 Execution Result of Examples
