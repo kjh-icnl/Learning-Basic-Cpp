@@ -72,10 +72,42 @@ int main()
     return 0;
 }
 ```
-The reason why I declared as `cVal[10]` is related with a concept of array. Acutally, "[10]" means the length of the data type, especially "char" in this case.
+The reason why I declared as `cVal[10]` is related with a concept of array. Acutally, "[10]" means the length of the data, especially "char" in this case. Thus, it let us know about that we can input only a word has lower 10 letters. What if I input a word `relationship`? Take a look `3.3 Execution Result of Examples`.
 
 
 ## 3.2 Operator
+### 3.2.1 Kinds of operator
+:) **Arithmetic Operator** : `+`, `-`, `*`, `/` and `%`, where % means a remainder after division. About other operators, I won't explain 'em.  
 
+:) **Assignment Operator** : `=`, `+=`, `-=`, `*=`, `/=` and `%=`. There is really IMPORTANT point: in programming, "=" doesn't mean "equal", but indeed "=" means "substitution". Generally, Assignment operator is made by cobining "=" with Arithmetic operators(AO). However, here is a simple formula.  
+  * `Val AO= Num` is equal to `Val = Val A0 Num`  
+  > **NOTE** : Normally, "Val" is Variables, "AO" is Arithmetic Operators and "Num" is a number.  
+
+See a following example
+```
+// Example 4
+#include <iostream>
+
+int main()
+{
+    int iVal_1, iVal_2, iVal_3;
+    
+    iVal_1 = 1;
+    iVal_2 = 2;
+    iVal_3 = 3;
+    
+    iVal_1 += 4; // iVal_1 should be 5
+    iVal_2 -= 5; // iVal_2 should be -3
+    iVal_3 *= 6; // iVal_3 should be 18
+    
+    std::cout << iVal_1 << std::endl;
+    std::cout << iVal_2 << std::endl;
+    std::cout << iVal_3 << std::endl; // Printing results
+    
+    return 0;
+}
+
+
+```
 
 ## 3.3 Execution Result of Examples
