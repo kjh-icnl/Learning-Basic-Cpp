@@ -54,4 +54,14 @@ When we make some programs or codes through coding(programming), a concept of `d
      > For example, `int iVal = 3;` or `double dVal = 3.1f;`  
      
      
-:) 
+#### 2.1.2.b Declare Constant
+:) In programming, `constant` means the fixed number once, which can't be altered by anything such as program.  
+
+
+  * On C-Style
+     > #define PI 3.14  
+  
+  
+  * On C++ Style
+     > const float PI = 3.14;
+     > &gt; &nbsp; **Note** : You can apply C-style on C++.
