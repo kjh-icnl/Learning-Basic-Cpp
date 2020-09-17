@@ -82,3 +82,16 @@ lVal = iVal;
 cout << lVal << endl;
 ```
   > **NOTE** : You don't have to analyze this code!!! Anyway, it's a part of the codes and won't work becasue it's not the full code. Just understand the flow!!
+
+
+:) This section is about `Explicit Type Conversion`. This method can impact directly on numbers. I think that you better see the following example to understand it.
+```
+cout << (double)(2 / 4) << endl;
+cout << ((double)2 / 4) << endl;
+cout << (double(2) / 4) << endl;
+cout << (static_cast<double>(2)/4) << endl;
+```
+  > **NOTE** : You don't have to analyze this code!!! Anyway, you should see something between "cout <<" and "<< endl;".  
+  
+  
+From the next lecture, you'll do programming (make the codes). However, you should know this: **Whenever the programming lines end, you must write `;`(semi-colon). At this time, you should be able to distinguish `code line` and `code block`.** I'll explain it about this at Lecture(4).
