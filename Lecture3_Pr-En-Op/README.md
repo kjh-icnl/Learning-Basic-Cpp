@@ -133,6 +133,8 @@ int main()
 :) **Logical Operators** : `&&`, `||` and `!`. If you've studied python, you'd be familiar with "and", "or" and so on. On C++, they have same functions with "and", "or" and so on. Thus "&&" is "and", "||" is "or" and "!" is "is not". Explanation Completed.
 
 
+:) **Bitwise Operator** include `&`, `|`, `^`, `~`, `<<` and `>>`.
+
 ## 3.3 Execution Result of Examples
   * Example **1**  Result (example)
   ```
