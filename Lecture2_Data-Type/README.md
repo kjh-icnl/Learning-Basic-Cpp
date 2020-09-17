@@ -68,4 +68,17 @@ When we make some programs or codes through coding(programming), a concept of `d
      
      
 #### 2.1.2.c Type Conversion
-:) 
+:) If you learned about data-type and variables, you should have soem knowledges about "Type Conversion". How can we perform `Type-Conversion`? In the case of numbers, you can only convert the types to higher types. The order of types is like this: `int` < `long` < `float` < `double`. It is called as `Implicit Type Conversion`. For this, we can perform it by substituting original value to **a new-high-data-type variable**.  
+
+Let's see the following example.
+
+```
+int iVal = 3.1;           
+cout << iVal << endl;
+double dVal = 3.1f;   
+cout << dVal << endl;
+long lVal;
+lVal = iVal;
+cout << lVal << endl;
+```
+  > **NOTE** : You don't have to analyze this code!!! Anyway, it's a part of the codes and won't work becasue it's not the full code. Just understand the flow!!
