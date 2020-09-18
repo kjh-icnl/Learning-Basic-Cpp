@@ -156,7 +156,7 @@ int main()
     
     return 0;
 }
-
+```
 
 :) Yes, it's quite simple comparing with `if statement`. However, it has also weakness when you make some more complicated program. So, in my case, I don't have a good memory so that I don't use this `Tenary Operator`. Even though I don't use it, you can use it if you feel comfortable when you use tenary operator. Then, let' solve really easy problem together!
 
