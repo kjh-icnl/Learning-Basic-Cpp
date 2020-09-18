@@ -107,11 +107,61 @@ int main()
 }
 ```
 
-:) How about it? Is it alright? Could you understand its structure and appliciation? Then, go learn another "conditional statement"!  
+:) How about it? Is it alright? Could you understand its structure and appliciation? Also, you can simplify the codes like the following code.  
+```
+// Example 4-2 
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float fScore{0};
+    
+    cout << "Enter your score: ";
+    cin >> fScore;
+    
+    cout << "Your Score: " << fScore << endl;
+    
+    if (fScore > 80) cout << "Your grade is A";
+    else if (fScore > 60) cout << "Your grade is B";
+    else if (fScore > 40) cout << "Your grade is C";
+    else cout << "You didn't pass this class: F" << endl;
+}
+```
+:) However, this simplification could be performed when the `code line`s in the **`if` code blocks** is really simple. Then, go learn another "conditional statement"!  
 
 
 ### 4.2.2 Tenary Operator
-:) Indeed, you don't have to know this grammar in detail. Because there are few people who use this structure. However, the reason why you need to know this is related to communications with other people(programmers).
+:) Indeed, you don't have to know this grammar in detail. Because there are few people who use this structure. However, the reason why you need to know this is related to communications with other people(programmers). Okay, then let's see the structure first.
+```
+( Condition ) ? True_Statement : False_Statement;
+```
+ > **NOTE** : True_Statement means that the statement will be executed when the condition is true, while False_Statement means that the statement will be executed when the condition is false.  
+
+:) Okay, then seeing one example, learn the logic. And anticipate the result of this code.
+
+```
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int max{0};
+    int x{10}, y{20};
+    
+    max = (x > y) ? x : y;
+    cout << max;
+    
+    return 0;
+}
+
+
+:) Yes, it's quite simple comparing with `if statement`. However, it has also weakness when you make some more complicated program. So, in my case, I don't have a good memory so that I don't use this `Tenary Operator`. Even though I don't use it, you can use it if you feel comfortable when you use tenary operator. Then, let' solve really easy problem together!
+
+  * **Problem 4-3** : 
+
 
 
 ## 4.3 Loop Statement
