@@ -207,6 +207,88 @@ switch (<variables>)
         <statements N+1>
 }
 ```
+:) When you use this `switch`, you should write `break` (except for default) at the end of every case. If you don't write it down, your program will execute all the codes until "break" is found. So, what you express "break" is really important for `switch`. Then, think about the following problem.  
+
+  * **Problem 4-5 :** Watch the one example, and think about the result. When you enter 2, anticipate the result. Simultaneously, if you think there are any parts need to be modified, modify the codes and execute the code again.  
+
+```
+//Example 4-5
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int iNum;
+    
+    cout << "Which product do you want to know information about?" << endl;
+    cout << "1. Airpods\t2. iPhone\t3. Galaxy Series\t4. Buds Plus" << endl;
+    cout << "Enter your choice: ";
+    cin >> iNum;
+    
+    switch (iNum)
+    {
+        case 1:
+            cout << "This section is about 'Airpods'." << endl;
+            break;
+        case 2:
+            cout << "This section is about 'iPhone'." << endl;
+        
+        case 3:
+            cout << "This section is about 'Galaxy Series'." << endl;
+        
+        case 4:
+            cout << "This section is about 'Buds Plus'." << endl;
+            break;
+        default:
+            cout << "You've entered a wrong number. Could you enter a number again?" << endl;
+    }
+    
+    return 0;
+}
+
+```
+:) Could you be familiar with `Switch` statement? Then, stop expecting the result of the codes and let's make a program! Solve a following problem!
+
+  * **Problem 4-6:** Your brother is a freshman of the university. So, you wanna let him know about the standard of the grade. For instance, for "A" grade, about what scores he should get, you'll make a program to do this thing. Then, how should you make the code? Write down your own ans codes.  
+
+```
+//Example 4-6
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    char cSel{'Z'};
+    
+    cout << "Which grade standard do you know about? ";
+    cin >> cSel;
+    
+    cout << "For " << cSel << " grade....." << endl; 
+    
+    switch (cSel)
+    {
+        case 'A':
+        case 'a':
+            cout << "You should get 80-over-points." << endl;
+            break;
+        case 'B':
+        case 'b':
+            cout << "You should get the points between 60 and 80." << endl;
+            break;
+        case 'C':
+        case 'c':
+            cout << "You should get the points between 60 and 40." << endl;
+            break;
+        default:
+            cout << "Your input has been wrong." << endl;
+    }
+
+    return 0;
+}
+```
+
 
 ## 4.3 Loop Statement
 
