@@ -6,7 +6,7 @@
   
 :) Then, how can we recognize "Code Block" and "Code Line"? `Code Block` is distinguished by mid-bracket {} on C/C++. If there is {}, the parts are called as "Code Block". Then "Code Line"? In one code block, `everything` except for any code blocks: this is `code line`. Take a look at the following example.
 
-  * **Problem 4-1 :** Now, you wanna make a program to calculate a circumference with a radius if you enter a radius. Also, unless you enter number -1, you wanna let your program continuously be executing. Then, why don't you make a code that has these functions?
+  * **Problem 4-1 :** Now, you wanna make a program to calculate a circumference with a radius if you enter a radius. Also, unless you enter number -1, you wanna let your program continuously be executing. Then, why don't you make a code that has these functions? And how could you make this program?
 
 ```
 // Example 4-1
