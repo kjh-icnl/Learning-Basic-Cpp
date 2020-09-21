@@ -37,6 +37,11 @@ int main()
 
 :) You can get something really valuable. **`새로 추가하기`**
 
+  * using namespace std; 에 대해 설명하기
+  * for 문에 대해 설명하기
+  * typeid( ).name()에 대해 설명하기
+  * 비트 연산자 << >> 에 대해 
+
 
 ## 4.2 Conditional Statement
 ### 4.2.1 if STATEMENT
