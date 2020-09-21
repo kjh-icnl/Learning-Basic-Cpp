@@ -1,4 +1,4 @@
-# 4 Lecture(4) : Flow Control
+# 4 Lecture(4) : Flow Control (1)
 ## 4.1 Before You Start
 :) In Lecture (2), I said like this **Whenever the programming lines end, you must write ;(semi-colon). At this time, you should be able to distinguish `code line` and `code block`**. Before the beginning, I'll explain this. 
   * **Code Block** can inclue `Code Block` and `Code Line`
@@ -6,7 +6,7 @@
   
 :) Then, how can we recognize "Code Block" and "Code Line"? `Code Block` is distinguished by mid-bracket {} on C/C++. If there is {}, the parts are called as "Code Block". Then "Code Line"? In one code block, `everything` except for any code blocks: this is `code line`. Take a look at the following example.
 
-  * **Problem 4-1 :** Now, you wanna make a program to calculate a circumference with a radius if you enter a radius. Also, unless you enter number 0, you wanna let your program continuously be executing. Then, why don't you make a code that has these functions?
+  * **Problem 4-1 :** Now, you wanna make a program to calculate a circumference with a radius if you enter a radius. Also, unless you enter number -1, you wanna let your program continuously be executing. Then, why don't you make a code that has these functions?
 
 ```
 // Example 4-1
@@ -20,9 +20,9 @@ int main()
     int iValue(2);
     double circum{0}; // Initialization of variables.
     for (;;) {
-        cout << "Enter the radius? ";
+        cout << "Enter the radius(enter -1 for close): "
         cin >> iValue;
-        if (iValue == 0)
+        if (iValue == -1)
         {
           break;
         }
@@ -171,16 +171,16 @@ using namespace std;
 
 int main()
 {
-    float iNum1{1}, iNum2{1};
+    float fNum1{1}, fNum2{1};
     float fResult{-1};
     
     cout << "Enter a first number: ";
-    cin >> iNum1;
+    cin >> fNum1;
     
     cout << "Enter a second number: ";
-    cin >> iNum2;
+    cin >> fNum2;
     
-    fResult = ( iNum2 != 0) ? iNum1/iNum2 : -1;
+    fResult = ( fNum2 != 0) ? fNum1/iNum2 : -1;
     cout << "Result : " << fResult << endl;
     
     return 0;
@@ -290,8 +290,70 @@ int main()
 ```
 
 
-## 4.3 Loop Statement
+## 4.3 Results of Examples
+  * Example **4-1** Result (example)
+  ```
+  Enter the radius(enter -1 for close): 3
+  circumference with a radius of 3 : 18.84(f)
+  Enter the radius(enter -1 for close): -1
+  
+  ```
 
-
-## 4.4 Results of Examples
-
+  * Example **4-2** Result (example)
+  ```
+  Enter your score: 55
+  Your Score: 55
+  Your grade is C
+  
+  ```
+  
+  * Example **4-3** Result (example)
+  ```
+  20
+  
+  ```
+  
+  * Example **4-4** Result(1) (example)
+  ```
+  Enter a first number: 19
+  Enter a second number: 3
+  6.33333
+  
+  ```
+  
+  * Example **4-4** Result(2) (example)
+  ```
+  Enter a first number: 19
+  Enter a second number: 0
+  -1
+  
+  ```
+  
+  
+  * Example **4-5** Result(1) (example)
+  ```
+  Which product do you want to know information about?                                                                                  
+  1. Airpods      2. iPhone       3. Galaxy Series        4. Buds Plus                                                                  
+  Enter your choice: 3                                                                                                                  
+  This section is about 'Galaxy Series'.                                                                                                
+  This section is about 'Buds Plus'.         
+  
+  ```
+  
+  * Example **4-5** Result(2) (example)
+  ```
+  Which product do you want to know information about?                                                                                  
+  1. Airpods      2. iPhone       3. Galaxy Series        4. Buds Plus                                                                  
+  Enter your choice: 1                                                                                                               
+  This section is about 'Airpods'.         
+  
+  ```
+  
+  * Example **4-6** Result (example)
+  ```
+  Which grade standard do you know about?: B
+  For B grade.....
+  You should get the points between 60 and 80.
+  
+  ```
+  
