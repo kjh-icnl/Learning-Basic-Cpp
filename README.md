@@ -42,3 +42,49 @@ You can leave any comments on my lecture!! Or You can feel free to contact me th
 
 
  ## If I can think something to add, then I'll add 'em !!!!
+
+
+
+```
+#include "pbPlots.hpp"
+#include "supportLib.hpp"
+#include <math.h>
+
+
+std::vector<double> createDomain(const double start, const double end, const double step){
+    std::vector<double> domain;
+    for (double i=start; i<end; i += step){
+        domain.push_back(i);
+    }
+    return domain;
+}
+
+std::vector<double> sin_func(const std::vector<double> domain){
+    std::vector<double> range;
+    for (int i=0; i<domain.size() ;i++){
+        range.push_back(sin(domain[i]));
+    }
+    return range;
+}
+
+
+
+int main() 
+{
+    RGBABitmapImageReference *imageRef = CreateRGBABitmapImageReference();
+
+    //std::vector<double> x = {-2, -1, 0, 1, 2};
+    //std::vector<double> y = {2, -1, -2, -1, 2};
+
+    std::vector<double> x = createDomain(-5, 5, 0.3);
+    std::vector<double> y = sin_func(x);
+
+    DrawScatterPlot(imageRef, 1000, 1000, &x, &y);
+
+    std::vector<double> *pngData = ConvertToPNG(imageRef->image);
+    WriteToFile(pngData, "plot.png");
+    DeleteImage(imageRef->image);
+
+    return 0;
+}
+```
