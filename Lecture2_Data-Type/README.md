@@ -72,7 +72,7 @@ When we make some programs or codes through coding(programming), a concept of `d
 
 Let's see the following example.
 
-```
+```cpp
 int iVal = 3.1;           
 cout << iVal << endl;
 double dVal = 3.1f;   
@@ -85,7 +85,7 @@ cout << lVal << endl;
 
 
 :) This section is about `Explicit Type Conversion`. This method can impact directly on numbers. I think that you better see the following example to understand it.
-```
+```cpp
 cout << (double)(2 / 4) << endl;
 cout << ((double)2 / 4) << endl;
 cout << (double(2) / 4) << endl;
