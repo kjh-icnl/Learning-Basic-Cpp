@@ -4,7 +4,7 @@
 ### 3.1.1 BASIC Starting Code!!!
 :) When you codes on C++, almost you'll follow this format.  
 
-```
+```cpp
 #include <iostream>
 
 int main()
@@ -20,7 +20,7 @@ int main()
 
 See this example.
 
-```
+```cpp
 // Example 1
 #include <iostream>
 
@@ -32,7 +32,7 @@ int main()
 ```
 Let's see another example.  
 
-```
+```cpp
 // Example 2
 #include <iostream>
 
@@ -51,7 +51,7 @@ int main()
 
 See this example.  
 
-```
+```cpp
 // Example 3
 #include <iostream>
 
@@ -83,7 +83,7 @@ The reason why I declared as `cVal[10]` is related with a concept of array. Acut
   > **NOTE** : Normally, "Val" is Variables, "AO" is Arithmetic Operators and "Num" is a number.  
 
 See a following example
-```
+```cpp
 // Example 4
 #include <iostream>
 
@@ -108,7 +108,7 @@ int main()
 ```
 
 :) **Increment and decrement operator** : `++` and `--`. This operator is a really easy concept. They mean adding 1 or subtracting 1. If you refer a following example, you can understand this concept totally.
-```
+```cpp
 // Example 5
 #include <iostream>
 
@@ -137,7 +137,7 @@ int main()
 
 ## 3.3 Execution Result of Examples
   * Example **1**  Result (example)
-  ```
+  ```bash
   Hello, World
   
   ...Press Any Button to exit console.
@@ -145,14 +145,14 @@ int main()
   You can ignore some texts such as "...Pres ~". Important part is `Hello, World`. From now, I won't write this line.  
   
   * Example **2**  Result (example)
-  ```
+  ```bash
   2
   Hello, World
   
   ```
 
   * Example **3**  Result(1) (example)
-  ```
+  ```bash
   Enter your word: apple
   Enter your number: 20
   Your word is apple
@@ -161,15 +161,15 @@ int main()
   ```
 
   * Example **3**  Result(2) (example)
-  ```
+  ```bash
   Enter your word: relationship
   Enter your number: 20
-  Your word is relationship
+  Your word is relationship
   Your number is 20
   
   ```
   or
-  ```
+  ```bash
   Enter your word: relationship
   Enter your number: 20
   Your word is relationsh
@@ -179,7 +179,7 @@ int main()
   You can get any result like these( Example 3 Result_2 ). This expression means that a length of the entered word is over a previous set array length (indeed 10).  
   
   * Example **4**  Result (example)
-  ```
+  ```bash
   5
   -3
   18
@@ -187,7 +187,7 @@ int main()
   ```
   
   * Example **5**  Result (example)
-  ```
+  ```bash
   2
   1
   
